@@ -15,3 +15,6 @@ $mail->Username = 'seu_email@seudominio.com';
 $mail->Password = 'sua_senha';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
+
+$mail->setFrom('seu_email@gmail.com', 'Seu Nome');
+$mail->addAddress('destinatario@gmail.com', 'Nome do Destinatário');
